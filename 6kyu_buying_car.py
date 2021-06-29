@@ -28,39 +28,6 @@ def nbMonths(startPriceOld, startPriceNew, savingperMonth, percentLossByMonth):
 
 print(nbMonths(2000, 8000, 1000, 1.5))
 
-# clever solution 1
-# def nbMonths(oldCarPrice, newCarPrice, saving, loss):
-#     months = 0
-#     budget = oldCarPrice
-#
-#     while budget < newCarPrice:
-#         months += 1
-#         if months % 2 == 0:
-#             loss += 0.5
-#
-#         oldCarPrice *= (100 - loss) / 100
-#         newCarPrice *= (100 - loss) / 100
-#         budget = saving * months + oldCarPrice
-#
-#     return [months, round(budget - newCarPrice)]
-
-# clever solution 2
-# def nbMonths(startPriceOld, startPriceNew, savingperMonth, percentLossByMonth):
-#     month = 0
-#     savings = 0
-#
-#     while startPriceOld + savings < startPriceNew:
-#         month += 1
-#         savings += savingperMonth
-#
-#         if month % 2 == 0:
-#             percentLossByMonth += 0.5
-#
-#         startPriceOld -= (startPriceOld * (percentLossByMonth / 100))
-#         startPriceNew -= (startPriceNew * (percentLossByMonth / 100))
-#
-#     return [month, round(startPriceOld + savings - startPriceNew)]
-
 
 
 
