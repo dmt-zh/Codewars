@@ -13,9 +13,4 @@ def make_readable(seconds):
         hours = seconds // 3600
         minutes = (seconds % 3600) // 60
         seconds = seconds % 60
-        if len(str(minutes)) < 2:
-            minutes = '0' + str(minutes)
-        if len(str(seconds)) < 2:
-            seconds = '0' + str(seconds)
-            return '{}:{}:{}'.format(hours, minutes, seconds)
-        return '{}:{}:{}'.format(hours, minutes, seconds)
+        return '{:02}:{:02}:{:02}'.format(hours, minutes, seconds)
