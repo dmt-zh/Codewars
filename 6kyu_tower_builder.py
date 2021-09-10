@@ -12,5 +12,3 @@ def tower_builder(n_floors):
     for i in range(1, n_floors*2, 2):
         res.append(('*' * i).center(n_floors*2 - 1))
     return res
-
-print(tower_builder(4))
