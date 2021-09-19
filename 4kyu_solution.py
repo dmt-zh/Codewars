@@ -19,20 +19,21 @@ def solution(args):
             start = args[i]
         else:
             if len(res) > 2:
-                ans += str(res[0]) + '-' + str(res[-1]) + ','
+                ans += f'{str(res[0])}-{str(res[-1])},'
                 start = args[i]
                 res = [start]
             elif len(res) == 2:
-                ans += str(res[0]) + ',' + str(res[-1]) + ','
+                ans += f'{str(res[0])},{str(res[-1])},'
                 start = args[i]
                 res = [start]
             else:
-                ans += str(start) + ','
+                ans += f'{str(start)},'
                 start = args[i]
                 res = [start]
     if len(res) > 2:
-        ans += str(res[0]) + '-' + str(res[-1])
+        ans += f'{str(res[0])}-{str(res[-1])}'
     elif len(res) == 2:
-        ans += str(res[0]) + ',' + str(res[-1])
+        ans += f'{str(res[0])},{str(res[-1])}'
     else:
         ans += str(args[-1])
+    return ans
