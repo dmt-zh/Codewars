@@ -9,10 +9,13 @@
 # returns "-6,-3-1,3-5,7-11,14,15,17-20"
 
 def solution(args):
+    
+    args.append(args[-1]+2)
     ans = ''
     res = []
     start = args[0]
     res.append(start)
+    
     for i in range(1, len(args)):
         if len(range(start, args[i])) == 1:
             res.append(args[i])
@@ -30,10 +33,4 @@ def solution(args):
                 ans += f'{str(start)},'
                 start = args[i]
                 res = [start]
-    if len(res) > 2:
-        ans += f'{str(res[0])}-{str(res[-1])}'
-    elif len(res) == 2:
-        ans += f'{str(res[0])},{str(res[-1])}'
-    else:
-        ans += str(args[-1])
-    return ans
+    return ans[:-1]
