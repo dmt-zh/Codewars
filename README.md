@@ -1,7 +1,4 @@
-# Codewars
-🈂 Solving katas on codewars
-
-This is the GitHub repository where I save copies of the katas I've completed using Python on
+**This is the GitHub repository where I save copies of the katas I've completed using Python on**
 [codewars.com](https://www.codewars.com/).
 
 [![Profile badge](https://www.codewars.com/users/dmts/badges/large)](https://www.codewars.com/users/dmts)
