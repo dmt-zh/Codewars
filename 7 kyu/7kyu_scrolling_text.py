@@ -16,4 +16,4 @@
 
 
 def scrolling_text(text):
-    return [''.join([text.upper()[i:], text.upper()[:i]]) for i in range(len(text))]
+    return [''.join([text[i:], text[:i]]).upper() for i in range(len(text))]
