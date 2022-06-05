@@ -1,3 +1,5 @@
+![](https://media.giphy.com/media/xT0BKGdOtPSQe5TL5S/giphy.gif)
+
 **This is the GitHub repository where I save copies of the katas I've completed using Python on**
 [codewars.com](https://www.codewars.com/).
 
